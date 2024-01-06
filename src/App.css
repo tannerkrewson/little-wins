@@ -39,3 +39,34 @@
 	display: inline-flex;
 	align-items: center;
 }
+
+.history-chart {
+	width: 14em;
+	margin-left: -1.5em;
+	margin-top: 2em;
+	margin-bottom: 0.5em;
+}
+
+.history-select {
+	display: flex;
+	justify-content: space-between;
+	gap: 3em;
+	margin-bottom: 1em;
+}
+
+.tag {
+	margin-top: 5em;
+	font-size: 12px;
+	text-align: center;
+	margin-bottom: 2em;
+}
+
+.tag a {
+	text-decoration: none;
+	color: rgb(0, 132, 255);
+}
+
+.tag a:visited {
+	text-decoration: none;
+	color: rgb(0, 132, 255);
+}

@@ -23,14 +23,7 @@ function HistoryPage({
 
 	return (
 		<>
-			<div
-				style={{
-					width: "14em",
-					marginLeft: "-1.5em",
-					marginTop: "2em",
-					marginBottom: ".5em",
-				}}
-			>
+			<div className="history-chart">
 				<BarChart
 					h={300}
 					data={thisWeekData}
@@ -40,14 +33,7 @@ function HistoryPage({
 					yAxisProps={{ domain: [0, getHighestCount() + 1] }}
 				/>
 			</div>
-			<div
-				style={{
-					display: "flex",
-					justifyContent: "space-between",
-					gap: "3em",
-					marginBottom: "3em",
-				}}
-			>
+			<div className="history-select">
 				<ActionIcon
 					variant="light"
 					color="gray"
@@ -111,6 +97,24 @@ function HistoryPage({
 					/>
 				</ActionIcon>
 			</Group>
+			<div className="tag">
+				Little Wins by{" "}
+				<a
+					href="https://www.tannerkrewson.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					Tanner Krewson
+				</a>
+				<br />
+				<a
+					href="https://github.com/tannerkrewson/little-wins"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					View on GitHub
+				</a>
+			</div>
 		</>
 	);
 }
