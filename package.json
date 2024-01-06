@@ -2,6 +2,7 @@
 	"name": "little-wins",
 	"version": "0.1.0",
 	"private": true,
+	"homepage": "https://www.tannerkrewson.com/little-wins",
 	"dependencies": {
 		"@mantine/core": "^7.4.0",
 		"@mantine/hooks": "^7.4.0",
