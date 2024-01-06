@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/little-wins/static/css/main.e4f9ec93.css",
+    "main.js": "/little-wins/static/js/main.3e76d166.js",
+    "static/js/787.557ea07f.chunk.js": "/little-wins/static/js/787.557ea07f.chunk.js",
+    "index.html": "/little-wins/index.html",
+    "main.e4f9ec93.css.map": "/little-wins/static/css/main.e4f9ec93.css.map",
+    "main.3e76d166.js.map": "/little-wins/static/js/main.3e76d166.js.map",
+    "787.557ea07f.chunk.js.map": "/little-wins/static/js/787.557ea07f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4f9ec93.css",
+    "static/js/main.3e76d166.js"
+  ]
+}
