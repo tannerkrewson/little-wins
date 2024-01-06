@@ -11,3 +11,15 @@ code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
 }
+
+.emoji-button {
+	transition: all 0.1s ease;
+	background: none;
+	border: none;
+	font-size: 10em;
+}
+
+.emoji-button:active {
+	transform: translateY(4px);
+	filter: brightness(0.9);
+}
