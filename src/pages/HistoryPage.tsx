@@ -1,4 +1,4 @@
-import { ActionIcon, Container, Group } from "@mantine/core";
+import { ActionIcon, Group } from "@mantine/core";
 import { BarChart } from "@mantine/charts";
 import {
 	IconChevronsLeft,

@@ -4,7 +4,6 @@ import EmojiButton from "../components/EmojiButton";
 import { animateEmoji } from "../utils/animateCount";
 import useCountTracker from "../utils/useCountTracker";
 import { getTodaysEmoji } from "../utils/getTodaysEmoji";
-import { useMemo } from "react";
 
 function MainPage({
 	setCurrentPage,
