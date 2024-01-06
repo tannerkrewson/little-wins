@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const LOCAL_STORAGE_KEY = "COUNT_TRACKER";
+export const LOCAL_STORAGE_KEY = "COUNT_TRACKER";
 
 export type Counts = { [date: string]: number };
 

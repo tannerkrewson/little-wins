@@ -4,10 +4,12 @@ import {
 	IconChevronsLeft,
 	IconArrowNarrowLeft,
 	IconArrowNarrowRight,
+	IconTableImport,
 } from "@tabler/icons-react";
 import useCountTracker from "../utils/useCountTracker";
 import { getDataForWeek } from "../utils/getDataForWeek";
 import { useState } from "react";
+import { importCounts } from "../utils/importCounts";
 
 function HistoryPage({
 	setCurrentPage,
@@ -81,6 +83,17 @@ function HistoryPage({
 					onClick={() => setCurrentPage("MainPage")}
 				>
 					<IconChevronsLeft
+						style={{ width: "70%", height: "70%" }}
+						stroke={1.5}
+					/>
+				</ActionIcon>
+				<ActionIcon
+					variant="light"
+					color="orange"
+					size="3em"
+					onClick={() => importCounts(counts)}
+				>
+					<IconTableImport
 						style={{ width: "70%", height: "70%" }}
 						stroke={1.5}
 					/>
