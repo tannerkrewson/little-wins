@@ -5,11 +5,12 @@ import {
 	IconArrowNarrowLeft,
 	IconArrowNarrowRight,
 	IconTableImport,
+	IconTableExport,
 } from "@tabler/icons-react";
 import useCountTracker from "../utils/useCountTracker";
 import { getDataForWeek } from "../utils/getDataForWeek";
 import { useState } from "react";
-import { importCounts } from "../utils/importCounts";
+import { importCounts, exportCounts } from "../utils/countUtils";
 
 function HistoryPage({
 	setCurrentPage,
@@ -94,6 +95,17 @@ function HistoryPage({
 					onClick={() => importCounts(counts)}
 				>
 					<IconTableImport
+						style={{ width: "70%", height: "70%" }}
+						stroke={1.5}
+					/>
+				</ActionIcon>{" "}
+				<ActionIcon
+					variant="light"
+					color="orange"
+					size="3em"
+					onClick={() => exportCounts(counts)}
+				>
+					<IconTableExport
 						style={{ width: "70%", height: "70%" }}
 						stroke={1.5}
 					/>
