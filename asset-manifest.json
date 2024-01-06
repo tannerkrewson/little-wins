@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/little-wins/static/css/main.e4f9ec93.css",
-    "main.js": "/little-wins/static/js/main.3e76d166.js",
-    "static/js/787.557ea07f.chunk.js": "/little-wins/static/js/787.557ea07f.chunk.js",
+    "main.css": "/little-wins/static/css/main.c1dc560c.css",
+    "main.js": "/little-wins/static/js/main.4106d78f.js",
+    "static/media/dm-sans-latin-wght-italic.woff2": "/little-wins/static/media/dm-sans-latin-wght-italic.8b0f7f5712947d8dfc9e.woff2",
+    "static/media/dm-sans-latin-wght-normal.woff2": "/little-wins/static/media/dm-sans-latin-wght-normal.b679aedace42c91e65f9.woff2",
+    "static/media/dm-sans-latin-ext-wght-italic.woff2": "/little-wins/static/media/dm-sans-latin-ext-wght-italic.3a0af33a2e1c9cb2828d.woff2",
+    "static/media/dm-sans-latin-ext-wght-normal.woff2": "/little-wins/static/media/dm-sans-latin-ext-wght-normal.29e02dedfafd2d9c9b2c.woff2",
     "index.html": "/little-wins/index.html",
-    "main.e4f9ec93.css.map": "/little-wins/static/css/main.e4f9ec93.css.map",
-    "main.3e76d166.js.map": "/little-wins/static/js/main.3e76d166.js.map",
-    "787.557ea07f.chunk.js.map": "/little-wins/static/js/787.557ea07f.chunk.js.map"
+    "main.c1dc560c.css.map": "/little-wins/static/css/main.c1dc560c.css.map",
+    "main.4106d78f.js.map": "/little-wins/static/js/main.4106d78f.js.map"
   },
   "entrypoints": [
-    "static/css/main.e4f9ec93.css",
-    "static/js/main.3e76d166.js"
+    "static/css/main.c1dc560c.css",
+    "static/js/main.4106d78f.js"
   ]
 }
