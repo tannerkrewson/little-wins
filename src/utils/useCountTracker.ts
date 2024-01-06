@@ -47,11 +47,17 @@ const useCountTracker = () => {
 		});
 	};
 
+	const getHighestCount = () => {
+		const values = Object.values(counts);
+		return Math.max(...values);
+	};
+
 	return {
 		counts,
 		increaseTodaysCount,
 		decreaseTodaysCount,
 		todaysCount: counts[todaysDateKey],
+		getHighestCount,
 	};
 };
 

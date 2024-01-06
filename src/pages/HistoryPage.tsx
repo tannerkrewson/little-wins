@@ -15,9 +15,8 @@ function HistoryPage({
 	setCurrentPage: (newPage: string) => void;
 }) {
 	const [weekOffset, setWeekOffset] = useState(0);
-	const { counts } = useCountTracker();
+	const { counts, getHighestCount } = useCountTracker();
 	const weekData = getDataForWeek(weekOffset, counts);
-	console.log(weekData);
 
 	return (
 		<>
@@ -28,6 +27,7 @@ function HistoryPage({
 					dataKey="dayOfWeek"
 					series={[{ name: "Little Wins", color: "#e5a33d" }]}
 					tickLine="y"
+					yAxisProps={{ domain: [0, getHighestCount()] }}
 				/>
 			</div>
 			<div
