@@ -3,6 +3,8 @@ import { IconArrowBackUp, IconChartBar } from "@tabler/icons-react";
 import EmojiButton from "../components/EmojiButton";
 import { animateEmoji } from "../utils/animateCount";
 import useCountTracker from "../utils/useCountTracker";
+import { getTodaysEmoji } from "../utils/getTodaysEmoji";
+import { useMemo } from "react";
 
 function MainPage({
 	setCurrentPage,
@@ -11,14 +13,17 @@ function MainPage({
 }) {
 	const { todaysCount, increaseTodaysCount, decreaseTodaysCount } =
 		useCountTracker();
+	const { emoji, text } = getTodaysEmoji();
 	return (
 		<>
 			<div className="big-count">
-				<div className="big-count-coin">🪙</div>
+				<div className="big-count-coin">{emoji}</div>
 				<div className="big-count-text">{todaysCount}</div>
 			</div>
 			<div>Little Wins today</div>
+			{text && <div style={{ fontSize: "0.5em" }}>Happy {text}!</div>}
 			<EmojiButton
+				emoji={emoji}
 				onClick={() => {
 					increaseTodaysCount();
 					animateEmoji();
