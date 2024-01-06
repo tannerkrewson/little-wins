@@ -4,6 +4,7 @@
 	"homepage": "https://www.tannerkrewson.com/little-wins",
 	"dependencies": {
 		"@fontsource-variable/dm-sans": "^5.0.3",
+		"@mantine/charts": "^7.4.0",
 		"@mantine/core": "^7.4.0",
 		"@mantine/hooks": "^7.4.0",
 		"@tabler/icons-react": "^2.45.0",
@@ -13,6 +14,7 @@
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"react-scripts": "5.0.1",
+		"recharts": "^2.10.3",
 		"typescript": "^4.9.5"
 	},
 	"scripts": {
