@@ -6,10 +6,8 @@ function App() {
 	const { todaysCount, increaseTodaysCount } = useCountTracker();
 	return (
 		<div className="App">
-			<header className="App-header">
-				<div>{todaysCount}</div>
-				<EmojiButton onClick={increaseTodaysCount} />
-			</header>
+			<div>{todaysCount}</div>
+			<EmojiButton onClick={increaseTodaysCount} />
 		</div>
 	);
 }
