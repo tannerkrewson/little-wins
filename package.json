@@ -3,6 +3,7 @@
 	"private": true,
 	"homepage": "https://www.tannerkrewson.com/little-wins",
 	"dependencies": {
+		"@fontsource-variable/dm-sans": "^5.0.3",
 		"@mantine/core": "^7.4.0",
 		"@mantine/hooks": "^7.4.0",
 		"@types/node": "^16.18.69",

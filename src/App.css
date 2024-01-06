@@ -6,8 +6,10 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	font-size: calc(10px + 2vmin);
-	color: white;
+	font-size: calc(18px + 2vmin);
+	font-weight: 700;
+	color: rgb(218, 210, 204);
+	font-family: "DM Sans Variable";
 }
 
 .emoji-button {
@@ -20,4 +22,20 @@
 .emoji-button:active {
 	transform: translateY(4px);
 	filter: brightness(0.9);
+}
+
+.big-count {
+	display: flex;
+	flex-direction: row;
+}
+
+.big-count-text {
+	font-weight: 900;
+	font-size: 2em;
+	color: #faf7f7;
+}
+
+.big-count-coin {
+	display: inline-flex;
+	align-items: center;
 }
