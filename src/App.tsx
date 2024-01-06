@@ -1,5 +1,6 @@
 import "./App.css";
 import EmojiButton from "./components/EmojiButton";
+import { animateEmoji } from "./utils/animateCount";
 import useCountTracker from "./utils/useCountTracker";
 
 function App() {
@@ -11,7 +12,12 @@ function App() {
 				<div className="big-count-text">{todaysCount}</div>
 			</div>
 			<div>Little Wins today</div>
-			<EmojiButton onClick={increaseTodaysCount} />
+			<EmojiButton
+				onClick={() => {
+					increaseTodaysCount();
+					animateEmoji();
+				}}
+			/>
 		</div>
 	);
 }
