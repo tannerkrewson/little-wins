@@ -3,6 +3,13 @@ import { type Counts, LOCAL_STORAGE_KEY } from "./useCountTracker";
 export const importCounts = (currentCounts: Counts) => {
 	try {
 		const inputData = prompt("Import data");
+
+		if (inputData === "CLEAR ALL") {
+			localStorage.removeItem(LOCAL_STORAGE_KEY);
+			alert("Cleared all data");
+			window.location.reload();
+		}
+
 		const importedData = JSON.parse(inputData || "");
 		const newCounts = { ...currentCounts, ...importedData };
 
