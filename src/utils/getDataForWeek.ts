@@ -1,4 +1,4 @@
-import { type Counts } from "./useCountTracker";
+import { getCurrentDate, type Counts } from "./useCountTracker";
 
 const DAYS_OF_WEEK = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -30,9 +30,8 @@ export const getDataForWeek = (weeksAgo: number, counts: Counts): WeekData => {
 		currentDate.setDate(startDate.getDate() + i);
 
 		const dayOfWeek = `${DAYS_OF_WEEK[i]} ${currentDate.getDate()}`;
-		const formattedDate = currentDate.toISOString().split("T")[0];
 
-		const count = counts[formattedDate] || 0;
+		const count = counts[getCurrentDate(currentDate)] || 0;
 
 		return { dayOfWeek, "Little Wins": count };
 	});
